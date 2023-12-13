@@ -26,7 +26,12 @@ export default function Home() {
         </nav>
       </header>
       <div className="text-center mt-24 mb-8">
-        <h1 className="text-3xl">Create epic captions to your videos</h1>
+        <h1
+          className="text-3xl"
+          style={{ textShadow: "1px 1px 0 ragba(0,0,0,.1)" }}
+        >
+          Add epic captions to your videos
+        </h1>
         <h2 className="text-white/75">
           Just upload your video and we will do the rest.
         </h2>
