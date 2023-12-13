@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <main className="p-4 max-w-2xl mx-auto">
-      <header className="flex justify-between mb-4">
-        <a href="" className="gap-1">
+      <header className="flex justify-between my-8">
+        <a href="" className="flex gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -25,12 +25,30 @@ export default function Home() {
           <a href="">Contact</a>
         </nav>
       </header>
-      <div>
-        <h1>Create epic captions to your videos</h1>
-        <h2>Just upload your video and we will do the rest.</h2>
+      <div className="text-center mt-24 mb-8">
+        <h1 className="text-3xl">Create epic captions to your videos</h1>
+        <h2 className="text-white/75">
+          Just upload your video and we will do the rest.
+        </h2>
       </div>
-      <div>
-        <button>Choose file</button>
+      <div className="text-center">
+        <button className="bg-green-600 py-2 px-6 rounded-full inline-flex gap-2 border-2 border-purple-700/50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
+            />
+          </svg>
+          <span>Choose file</span>
+        </button>
       </div>
     </main>
   );
