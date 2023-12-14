@@ -1,3 +1,4 @@
+import SparklesIcon from "@/components/SparklesIcon";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -17,7 +18,20 @@ export default function RootLayout({ children }) {
           " bg-gradient-to-b from-bg-gradient-from to-bg-gradient-to min-h-screen text-white"
         }
       >
-        {children}
+        <main className="p-4 max-w-2xl mx-auto">
+          <header className="flex justify-between my-8">
+            <a href="" className="flex gap-1">
+              <SparklesIcon />
+              <span>AutoCaption</span>
+            </a>
+            <nav className="flex gap-6 text-white/80">
+              <a href="">Home</a>
+              <a href="">Pricing</a>
+              <a href="">Contact</a>
+            </nav>
+          </header>
+          {children}
+        </main>
       </body>
     </html>
   );
