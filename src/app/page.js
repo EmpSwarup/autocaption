@@ -1,6 +1,5 @@
 import DemoSection from "@/components/DemoSection";
 import PageHeaders from "@/components/PageHeaders";
-import SparklesIcon from "@/components/SparklesIcon";
 import UploadIcon from "@/components/UploadIcon";
 
 export default function Home() {
